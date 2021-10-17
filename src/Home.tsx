@@ -119,6 +119,7 @@ const Home = (props: HomeProps) => {
     } catch (error: any) {
       // TODO: blech:
       let message = error.msg || "Minting failed! Please try again!";
+      console.log(error)
       if (!error.msg) {
         if (error.message.indexOf("0x138")) {
         } else if (error.message.indexOf("0x137")) {
